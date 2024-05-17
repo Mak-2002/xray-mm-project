@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\qusaiswork\\xrayimageprocessor\\xrayimageprocessor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\qusaiswork\\xrayimageprocessor\\xrayimageprocessor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\qusaiswork\\xrayimageprocessor\\xrayimageprocessor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\Form1.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Form1.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\Form1.cs [Design]",
-              "RelativeToolTip": "XRayImageProcessor\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T16:41:47.148Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\Form1.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Form1.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\Form1.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Form1.cs",
-              "ViewState": "AQIAAJcAAAAAAAAAAAAAAKgAAAANAAAA",
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\MainForm.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\MainForm.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\MainForm.cs",
+              "RelativeToolTip": "XRayImageProcessor\\MainForm.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAA/wLYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T16:41:21.091Z",
+              "WhenOpened": "2024-05-17T20:45:59.857Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XRayImageProcessor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5df198a3ffdc16f50d0f41fd5f553bbe11ad6951")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc74e9662e3ae5bd42da4458b7853f530a6efab8")]
 [assembly: System.Reflection.AssemblyProductAttribute("XRayImageProcessor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XRayImageProcessor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
