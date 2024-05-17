@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XRayImageProcessor.Filters
 {
-    internal interface IFilter
+    public interface IFilter
     {
         Color ApplyFilter(int intensity);
     }
