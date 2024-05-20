@@ -45,12 +45,14 @@ namespace XRayImageProcessor
         {
             for (int i = 0; i < SelectedRegions.Count; i++)
             {
-                using (Pen pen = new Pen(RegionColors[i] == Color.Empty ? Color.Red : RegionColors[i], 2))
+                Color borderColor = (i == SelectedRegions.Count - 1) ? Color.Red : RegionColors[i];
+                using (Pen pen = new Pen(borderColor, 2))
                 {
                     e.Graphics.DrawRectangle(pen, SelectedRegions[i]);
                 }
             }
         }
+
 
         public Rectangle AdjustRegionForPaddingAndScaling(Rectangle region, Bitmap originalImage, PictureBox pictureBox)
         {

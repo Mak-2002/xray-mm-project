@@ -28,6 +28,7 @@
         private System.Windows.Forms.Button btnApplyFilter;
         private System.Windows.Forms.Button btnSaveImage;
         private System.Windows.Forms.Button btnSelectColor;
+        private System.Windows.Forms.Button btnUndo;
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -41,6 +42,7 @@
             btnApplyFilter = new Button();
             btnSaveImage = new Button();
             btnSelectColor = new Button();
+            btnUndo = new Button();
             ((System.ComponentModel.ISupportInitialize)pbXrayImage).BeginInit();
             SuspendLayout();
             // 
@@ -114,11 +116,23 @@
             btnSelectColor.Visible = false;
             btnSelectColor.Click += BtnSelectColor_Click;
             // 
+            // btnUndo
+            // 
+            btnUndo.Location = new Point(551, 22);
+            btnUndo.Margin = new Padding(3, 4, 3, 4);
+            btnUndo.Name = "btnUndo";
+            btnUndo.Size = new Size(112, 39);
+            btnUndo.TabIndex = 6;
+            btnUndo.Text = "Undo";
+            btnUndo.UseVisualStyleBackColor = true;
+            btnUndo.Click += BtnUndo_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(675, 751);
+            ClientSize = new Size(676, 751);
+            Controls.Add(btnUndo);
             Controls.Add(btnSaveImage);
             Controls.Add(btnApplyFilter);
             Controls.Add(cbFilters);
@@ -128,6 +142,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "MainForm";
             Text = "X-ray Image App";
+            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbXrayImage).EndInit();
             ResumeLayout(false);
         }

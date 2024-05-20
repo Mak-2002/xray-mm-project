@@ -9,6 +9,7 @@ namespace XRayImageProcessor
         private ImageHandler imageHandler = new ImageHandler();
         private RegionManager regionManager = new RegionManager();
         private FilterManager filterManager = new FilterManager();
+        private ImageHistory imageHistory = new ImageHistory(); // Image history manager
 
         public MainForm()
         {
@@ -26,6 +27,8 @@ namespace XRayImageProcessor
         private void BtnLoadImage_Click(object sender, EventArgs e)
         {
             imageHandler.LoadImage(pbXrayImage);
+            imageHistory.Clear();
+            imageHistory.SaveState((Bitmap)pbXrayImage.Image.Clone());
         }
 
         private void PbXrayImage_MouseDown(object sender, MouseEventArgs e)
@@ -74,11 +77,23 @@ namespace XRayImageProcessor
             }
 
             pbXrayImage.Image = displayedImage;
+
+            // Save current image state to history before applying the filter
+            imageHistory.SaveState((Bitmap)pbXrayImage.Image.Clone());
         }
 
         private void BtnSaveImage_Click(object sender, EventArgs e)
         {
             imageHandler.SaveImage(pbXrayImage);
+        }
+
+        private void BtnUndo_Click(object sender, EventArgs e)
+        {
+            Bitmap? previousImage = imageHistory.Undo();
+            if (previousImage != null)
+            {
+                pbXrayImage.Image = previousImage;
+            }
         }
 
         private void cbFilters_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,6 +108,11 @@ namespace XRayImageProcessor
             {
                 btnSelectColor.Visible = false;
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
