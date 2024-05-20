@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace XRayImageProcessor.Filters
 {
-    internal class GrayscaleFilter : IFilter
+    internal class ContrastEnhancementFilter : IFilter
     {
-        // useless filter
         public Color ApplyFilter(Color originalColor)
         {
             int intensity = (int)((originalColor.R + originalColor.G + originalColor.B) / 3.0);
-            return Color.FromArgb(intensity, intensity, intensity); // Convert to grayscale
+
+            int contrastLevel = 2; // Adjust contrast level
+            int newIntensity = (intensity - 128) * contrastLevel + 128;
+            newIntensity = Math.Max(0, Math.Min(255, newIntensity));
+
+            return Color.FromArgb(newIntensity, newIntensity, newIntensity);
         }
     }
 }

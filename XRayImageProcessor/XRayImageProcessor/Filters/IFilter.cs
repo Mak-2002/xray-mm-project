@@ -8,6 +8,6 @@ namespace XRayImageProcessor.Filters
 {
     public interface IFilter
     {
-        Color ApplyFilter(int intensity);
+        Color ApplyFilter(Color originalColor);
     }
 }

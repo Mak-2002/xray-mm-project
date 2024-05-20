@@ -7,16 +7,22 @@ namespace XRayImageProcessor
     {
         private Dictionary<string, IFilter> filters = new Dictionary<string, IFilter>();
         public IFilter CurrentFilter { get; private set; }
+        public CustomFilter customFilter { get; private set; }
 
         public FilterManager()
         {
             filters.Add("Tumor Progression", new TumorProgressionFilter());
-            filters.Add("Grayscale", new GrayscaleFilter());
+            filters.Add("Contrast Enhancement", new ContrastEnhancementFilter());
+            customFilter = new CustomFilter();
+            filters.Add("Custom Color", customFilter);
         }
 
         public void SetCurrentFilter(string filterName)
         {
-            CurrentFilter = filters[filterName];
+            if (filters.ContainsKey(filterName))
+            {
+                CurrentFilter = filters[filterName];
+            }
         }
 
         public void ApplyFilterToRegion(Bitmap bmp, Rectangle region)
@@ -28,8 +34,8 @@ namespace XRayImageProcessor
                     if (x >= 0 && y >= 0 && x < bmp.Width && y < bmp.Height)
                     {
                         Color originalColor = bmp.GetPixel(x, y);
-                        int intensity = (int)((originalColor.R + originalColor.G + originalColor.B) / 3.0);
-                        Color newColor = CurrentFilter.ApplyFilter(intensity);
+
+                        Color newColor = CurrentFilter.ApplyFilter(originalColor);
                         bmp.SetPixel(x, y, newColor);
                     }
                 }
@@ -39,6 +45,11 @@ namespace XRayImageProcessor
         public string[] GetFilterNames()
         {
             return filters.Keys.ToArray();
+        }
+
+        internal void SetCustomFilterColor(Color color)
+        {
+            customFilter.SetColor(color);
         }
     }
 }

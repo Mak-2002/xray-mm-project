@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = XRayImageProcessor
-build_property.ProjectDir = C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\QusaisWork\XRayImageProcessor\XRayImageProcessor\
+build_property.ProjectDir = C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

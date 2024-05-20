@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj": {}
+    "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj": {
+    "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj",
+        "projectUniqueName": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj",
         "projectName": "XRayImageProcessor",
-        "projectPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj",
+        "projectPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\XRayImageProcessor.csproj",
         "packagesPath": "C:\\Users\\kossa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\QusaisWork\\XRayImageProcessor\\XRayImageProcessor\\obj\\",
+        "outputPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kossa\\AppData\\Roaming\\NuGet\\NuGet.Config",

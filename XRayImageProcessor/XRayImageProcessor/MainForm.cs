@@ -48,6 +48,17 @@ namespace XRayImageProcessor
             regionManager.DrawRegions(e);
         }
 
+        private void BtnSelectColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                if (colorDialog.ShowDialog() == DialogResult.OK)
+                {
+                    filterManager.SetCustomFilterColor(colorDialog.Color);
+                }
+            }
+        }
+
         private void BtnApplyFilter_Click(object sender, EventArgs e)
         {
             if (pbXrayImage.Image == null || regionManager.SelectedRegions.Count == 0) return;
@@ -68,6 +79,20 @@ namespace XRayImageProcessor
         private void BtnSaveImage_Click(object sender, EventArgs e)
         {
             imageHandler.SaveImage(pbXrayImage);
+        }
+
+        private void cbFilters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            filterManager.SetCurrentFilter(cbFilters.SelectedItem.ToString());
+
+            if (cbFilters.SelectedItem.ToString() == "Custom Color")
+            {
+                btnSelectColor.Visible = true;
+            }
+            else
+            {
+                btnSelectColor.Visible = false;
+            }
         }
     }
 }
