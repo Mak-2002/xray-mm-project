@@ -78,7 +78,7 @@ namespace XRayImageProcessor
 
             pbXrayImage.Image = displayedImage;
 
-            // Save current image state to history before applying the filter
+            // Push an image to history
             imageHistory.SaveState((Bitmap)pbXrayImage.Image.Clone());
         }
 

@@ -12,7 +12,6 @@ namespace XRayImageProcessor.Filters
 
         public CustomFilter()
         {
-            // Default color
             chosenColor = Color.Gray;
         }
 
@@ -25,7 +24,6 @@ namespace XRayImageProcessor.Filters
         {
             int intensity = (int)((originalColor.R + originalColor.G + originalColor.B) / 3.0);
 
-            // Apply the chosen color with the given intensity
             int r = (int)(chosenColor.R * (intensity / 255.0));
             int g = (int)(chosenColor.G * (intensity / 255.0));
             int b = (int)(chosenColor.B * (intensity / 255.0));

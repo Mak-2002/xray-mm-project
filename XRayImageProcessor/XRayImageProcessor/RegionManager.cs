@@ -53,7 +53,6 @@ namespace XRayImageProcessor
             }
         }
 
-
         public Rectangle AdjustRegionForPaddingAndScaling(Rectangle region, Bitmap originalImage, PictureBox pictureBox)
         {
             float imageAspect = (float)originalImage.Width / originalImage.Height;
