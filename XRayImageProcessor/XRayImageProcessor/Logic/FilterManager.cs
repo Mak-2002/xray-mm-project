@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using XRayImageProcessor.Filters;
 
-namespace XRayImageProcessor
+namespace XRayImageProcessor.Logic
 {
     public class FilterManager
     {

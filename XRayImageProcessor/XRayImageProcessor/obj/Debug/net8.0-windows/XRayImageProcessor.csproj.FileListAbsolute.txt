@@ -32,3 +32,5 @@ C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRay
 C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\obj\Debug\net8.0-windows\XRayImageProcessor.pdb
 C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\obj\Debug\net8.0-windows\XRayImageProcessor.genruntimeconfig.cache
 C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\obj\Debug\net8.0-windows\ref\XRayImageProcessor.dll
+C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\obj\Debug\net8.0-windows\XRayImageProcessor.CompareForm.resources
+C:\Users\kossa\Documents\GitHub\mak-2002\xray-mm-project\XRayImageProcessor\XRayImageProcessor\obj\Debug\net8.0-windows\XRayImageProcessor.IntroductionForm.resources

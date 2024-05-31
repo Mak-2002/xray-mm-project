@@ -29,6 +29,7 @@
         private System.Windows.Forms.Button btnSaveImage;
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.Button btnUndo;
+        private System.Windows.Forms.Button btnOpenCompareForm;
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -43,6 +44,7 @@
             btnSaveImage = new Button();
             btnSelectColor = new Button();
             btnUndo = new Button();
+            btnOpenCompareForm = new Button();
             ((System.ComponentModel.ISupportInitialize)pbXrayImage).BeginInit();
             SuspendLayout();
             // 
@@ -127,6 +129,16 @@
             btnUndo.UseVisualStyleBackColor = true;
             btnUndo.Click += BtnUndo_Click;
             // 
+            // btnOpenCompareForm
+            // 
+            btnOpenCompareForm.Location = new Point(-14, 659);
+            btnOpenCompareForm.Name = "btnOpenCompareForm";
+            btnOpenCompareForm.Size = new Size(150, 40);
+            btnOpenCompareForm.TabIndex = 6;
+            btnOpenCompareForm.Text = "Compare Images";
+            btnOpenCompareForm.UseVisualStyleBackColor = true;
+            btnOpenCompareForm.Click += BtnOpenCompareForm_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
@@ -139,7 +151,10 @@
             Controls.Add(btnSelectColor);
             Controls.Add(pbXrayImage);
             Controls.Add(btnLoadImage);
+            Controls.Add(btnOpenCompareForm);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "MainForm";
             Text = "X-ray Image App";
             Load += MainForm_Load;

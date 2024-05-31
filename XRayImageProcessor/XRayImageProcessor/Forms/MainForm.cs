@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using XRayImageProcessor.Logic;
 
 namespace XRayImageProcessor
 {
@@ -113,6 +114,12 @@ namespace XRayImageProcessor
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnOpenCompareForm_Click(object sender, EventArgs e)
+        {
+            CompareForm compareForm = new CompareForm();
+            compareForm.Show();
         }
     }
 }
