@@ -5,7 +5,7 @@ namespace XRayImageProcessor
 {
     public class ImageHandler
     {
-        public Bitmap OriginalImage { get; private set; }
+        public Bitmap OriginalImage { get; set; }
 
         public void LoadImage(PictureBox pictureBox)
         {
@@ -32,6 +32,16 @@ namespace XRayImageProcessor
                     pictureBox.Image.Save(sfd.FileName);
                 }
             }
+        }
+
+        public Bitmap CropImage(Bitmap source, Rectangle cropRegion)
+        {
+            Bitmap croppedImage = new Bitmap(cropRegion.Width, cropRegion.Height);
+            using (Graphics g = Graphics.FromImage(croppedImage))
+            {
+                g.DrawImage(source, new Rectangle(0, 0, cropRegion.Width, cropRegion.Height), cropRegion, GraphicsUnit.Pixel);
+            }
+            return croppedImage;
         }
     }
 }

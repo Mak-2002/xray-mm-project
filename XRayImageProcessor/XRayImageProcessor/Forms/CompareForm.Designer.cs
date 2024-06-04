@@ -44,19 +44,19 @@
             // 
             btnLoadImageA.Location = new Point(12, 12);
             btnLoadImageA.Name = "btnLoadImageA";
-            btnLoadImageA.Size = new Size(150, 40);
+            btnLoadImageA.Size = new Size(184, 40);
             btnLoadImageA.TabIndex = 0;
-            btnLoadImageA.Text = "Load X-ray Image A";
+            btnLoadImageA.Text = "Load Old X-ray Image";
             btnLoadImageA.UseVisualStyleBackColor = true;
             btnLoadImageA.Click += BtnLoadImageA_Click;
             // 
             // btnLoadImageB
             // 
-            btnLoadImageB.Location = new Point(318, 12);
+            btnLoadImageB.Location = new Point(394, 12);
             btnLoadImageB.Name = "btnLoadImageB";
-            btnLoadImageB.Size = new Size(150, 40);
+            btnLoadImageB.Size = new Size(184, 40);
             btnLoadImageB.TabIndex = 1;
-            btnLoadImageB.Text = "Load X-ray Image B";
+            btnLoadImageB.Text = "Load New X-ray Image";
             btnLoadImageB.UseVisualStyleBackColor = true;
             btnLoadImageB.Click += BtnLoadImageB_Click;
             // 

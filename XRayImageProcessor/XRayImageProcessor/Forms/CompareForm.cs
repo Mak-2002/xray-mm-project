@@ -22,7 +22,7 @@ namespace XRayImageProcessor
         }
 
         private void BtnLoadImageA_Click(object sender, EventArgs e)
-        {
+        {   
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
@@ -59,28 +59,33 @@ namespace XRayImageProcessor
             bool significantChange = CompareImages(imageA, imageB);
 
             lblComparisonResult.Text = significantChange
-                ? "Significant change detected."
+                ? "Significant change detected (progress in treatment or disease deterioration)."
                 : "No significant change detected.";
         }
 
         private bool CompareImages(Bitmap imgA, Bitmap imgB)
         {
+            // Resize imgB to match the dimensions of imgA if they are different
             if (imgA.Width != imgB.Width || imgA.Height != imgB.Height)
             {
-                return true; // Different sizes indicate significant change
+                imgB = new Bitmap(imgB, imgA.Width, imgA.Height);
             }
 
+            // Normalize images to reduce the effect of lighting differences
+            Bitmap normalizedImgA = NormalizeImage(imgA);
+            Bitmap normalizedImgB = NormalizeImage(imgB);
+
             int diffCount = 0;
-            int totalPixels = imgA.Width * imgA.Height;
+            int totalPixels = normalizedImgA.Width * normalizedImgA.Height;
 
-            for (int y = 0; y < imgA.Height; y++)
+            for (int y = 0; y < normalizedImgA.Height; y++)
             {
-                for (int x = 0; x < imgA.Width; x++)
+                for (int x = 0; x < normalizedImgA.Width; x++)
                 {
-                    Color colorA = imgA.GetPixel(x, y);
-                    Color colorB = imgB.GetPixel(x, y);
+                    Color colorA = normalizedImgA.GetPixel(x, y);
+                    Color colorB = normalizedImgB.GetPixel(x, y);
 
-                    if (colorA != colorB)
+                    if (!ColorsAreSimilar(colorA, colorB))
                     {
                         diffCount++;
                     }
@@ -90,6 +95,36 @@ namespace XRayImageProcessor
             // Define a threshold for what constitutes a "significant" change
             double diffPercentage = (double)diffCount / totalPixels;
             return diffPercentage > 0.05; // 5% difference threshold
+        }
+
+        private Bitmap NormalizeImage(Bitmap image)
+        {
+            // Simple normalization: convert to grayscale to minimize color variation effects
+            Bitmap normalizedImage = new Bitmap(image.Width, image.Height);
+
+            for (int i = 0; i < image.Width; i++)
+            {
+                for (int j = 0; j < image.Height; j++)
+                {
+                    Color originalColor = image.GetPixel(i, j);
+                    int grayScale = (int)((originalColor.R * 0.3) + (originalColor.G * 0.59) + (originalColor.B * 0.11));
+                    Color grayColor = Color.FromArgb(grayScale, grayScale, grayScale);
+                    normalizedImage.SetPixel(i, j, grayColor);
+                }
+            }
+
+            return normalizedImage;
+        }
+
+        private bool ColorsAreSimilar(Color colorA, Color colorB)
+        {
+            // Simple similarity check based on a threshold in grayscale intensity
+            int threshold = 15; // Intensity difference threshold
+            int colorADiff = Math.Abs(colorA.R - colorB.R);
+            int colorBDiff = Math.Abs(colorA.G - colorB.G);
+            int colorCDiff = Math.Abs(colorA.B - colorB.B);
+
+            return (colorADiff < threshold && colorBDiff < threshold && colorCDiff < threshold);
         }
 
         private void pbXrayImageA_Click(object sender, EventArgs e)
