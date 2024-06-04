@@ -44,13 +44,13 @@ namespace XRayImageProcessor.Helpers
             }
         }
 
-        public async Task ShareReportOnTelegram(string botToken, string chatId, byte[] reportData)
+        public async Task ShareZIPtOnTelegram(string botToken, string chatId, byte[] reportData)
         {
             using (var httpClient = new HttpClient())
             {
                 using (var content = new MultipartFormDataContent())
                 {
-                    content.Add(new ByteArrayContent(reportData), "document", "report.pdf");
+                    content.Add(new ByteArrayContent(reportData), "document", "ZipArchive.zip");
 
                     var url = $"https://api.telegram.org/bot{botToken}/sendDocument?chat_id={chatId}";
                     var response = await httpClient.PostAsync(url, content);

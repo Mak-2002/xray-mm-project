@@ -36,8 +36,9 @@ namespace XRayImageProcessor
         private enum ShapeType { None, Rectangle, Triangle, Curve, Arrow }
         private ShapeType currentShapeType = ShapeType.None;
 
-        private byte[] audioData;
+        //private byte[] audioData;
         private byte[] pdfReport;
+        private byte[] zipFile;
 
         public MainForm()
         {
@@ -98,6 +99,7 @@ namespace XRayImageProcessor
             }
             shapeManager.FinishShape();
             pbXrayImage.Invalidate();
+            imageHistory.SaveState((Bitmap)pbXrayImage.Image);
         }
 
         private void PbXrayImage_Paint(object sender, PaintEventArgs e)
@@ -422,6 +424,8 @@ namespace XRayImageProcessor
             }
             var zipData = zipCompressor.CompressToZip(imageData, pdfReport, audioStream);
 
+            zipFile = zipData;
+
             File.WriteAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "compressedData.zip"), zipData);
             MessageBox.Show("Zip file generated and saved as 'compressedData.zip'.", "Compressed successfully");
         }
@@ -429,13 +433,13 @@ namespace XRayImageProcessor
         private async void shareToTelegramBotToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // TODO
-            var botToken = "YOUR_TELEGRAM_BOT_API_TOKEN";
-            var chatId = "YOUR_CHAT_ID";
+            var botToken = "7187219845:AAEqNp-LtPrxuieFVFcNbvQkIDf8Zb0njAQ";
+            var chatId = "1424639833";
 
             byte[] imageData = null;
             try
             {
-                imageData = File.ReadAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Storage", "output.png"));
+                imageData = File.ReadAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "output.png"));
             }
             catch (Exception exception)
             {
@@ -443,11 +447,42 @@ namespace XRayImageProcessor
                 return;
             }
 
-            await telegramHelper.ShareVoiceOnTelegram(botToken, chatId, audioData);
-            await telegramHelper.ShareImageOnTelegram(botToken, chatId, imageData);
-            await telegramHelper.ShareReportOnTelegram(botToken, chatId, pdfReport);
+            bool somethingIsSent = false;
+            try
+            {
+                await telegramHelper.ShareVoiceOnTelegram(botToken, chatId, audioStream.ToArray());
+                somethingIsSent = true;
+            }
+            catch
+            {
 
-            MessageBox.Show("Files sent to Telegram.", "Share on Telegram");
+            }
+            try
+            {
+                await telegramHelper.ShareImageOnTelegram(botToken, chatId, imageData);
+                somethingIsSent = true;
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                await telegramHelper.ShareZIPtOnTelegram(botToken, chatId, zipFile);
+                somethingIsSent = true;
+            }
+            catch
+            {
+
+            }
+            if (somethingIsSent)
+            {
+                MessageBox.Show("Files sent to Telegram.", "Share on Telegram");
+            }
+            else
+            {
+                MessageBox.Show("Failed to share to Telegram.", "Share on Telegram");
+            }
         }
 
         private void btnPlayVoiceNote_Click(object sender, EventArgs e)
