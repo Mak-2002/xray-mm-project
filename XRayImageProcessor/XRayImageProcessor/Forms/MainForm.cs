@@ -1,8 +1,13 @@
 ﻿using AForge.Math.Geometry;
+using NAudio.CoreAudioApi;
+using NAudio.Utils;
+using NAudio.Wave;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using XRayImageProcessor.Forms;
+using XRayImageProcessor.Helpers;
 using XRayImageProcessor.Logic;
 using XRayImageProcessor.Shapes;
 
@@ -17,9 +22,22 @@ namespace XRayImageProcessor
         private RegionClassificationManager regionClassificationManager = new RegionClassificationManager();
         private FourierTransformationManager fourierTransformationManager = new FourierTransformationManager();
         private ShapeManager shapeManager = new ShapeManager();
+        private AudioRecorder audioRecorder = new AudioRecorder();
+        private ZipCompressor zipCompressor = new ZipCompressor();
+        private PdfReportGenerator pdfReportGenerator = new PdfReportGenerator();
+        private TelegramHelper telegramHelper = new TelegramHelper();
+        private WaveInEvent? waveInEvent = new WaveInEvent();
+        private WaveOutEvent? waveOutEvent = new WaveOutEvent();
+        private WaveFileWriter? waveFileWriter;
+        private MemoryStream audioStream = new();
+        private bool isRecording = false;
+        private bool isPlaying = false;
 
         private enum ShapeType { None, Rectangle, Triangle, Curve, Arrow }
         private ShapeType currentShapeType = ShapeType.None;
+
+        private byte[] audioData;
+        private byte[] pdfReport;
 
         public MainForm()
         {
@@ -305,5 +323,167 @@ namespace XRayImageProcessor
             imageHistory.SaveState(originalImage);
         }
 
+        private void OnDataAvailable(object? sender, WaveInEventArgs e)
+        {
+            if (waveFileWriter != null)
+            {
+                waveFileWriter.Write(e.Buffer, 0, e.BytesRecorded);
+                waveFileWriter.Flush();
+            }
+        }
+
+        private void OnRecordingStopped(object? sender, StoppedEventArgs e)
+        {
+            if (waveFileWriter != null)
+            {
+                waveFileWriter.Dispose();
+                waveFileWriter = null;
+            }
+
+            if (waveInEvent != null)
+            {
+                waveInEvent.Dispose();
+                waveInEvent = null;
+            }
+            if (waveOutEvent != null)
+            {
+                waveOutEvent.Dispose();
+                waveOutEvent = null;
+            }
+        }
+
+        private void btnAddVoiceNote_Click(object sender, EventArgs e)
+        {
+            isRecording = !isRecording;
+            if (isRecording)
+            {
+                audioStream = new MemoryStream();
+                waveInEvent = new WaveInEvent();
+                waveInEvent.WaveFormat = new WaveFormat(44100, 1); // 44.1kHz mono
+                waveInEvent.DataAvailable += OnDataAvailable;
+                waveInEvent.RecordingStopped += OnRecordingStopped;
+
+                waveFileWriter = new WaveFileWriter(new IgnoreDisposeStream(audioStream), waveInEvent.WaveFormat);
+                waveInEvent.StartRecording();
+            }
+            else
+            {
+                waveInEvent?.StopRecording();
+            }
+        }
+
+        private void generatePDFReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] imageData = null;
+            try
+            {
+                imageData = File.ReadAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "output.png"));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Please save the image first.");
+                return;
+            }
+
+            var reportContent = new Dictionary<string, string> { };
+
+            string caseName = Microsoft.VisualBasic.Interaction.InputBox("Please enter case name:", "Input Case Name", "");
+            if (!string.IsNullOrEmpty(caseName))
+            {
+                reportContent.Add("Case Name", caseName);
+            }
+
+            string caseDescription = Microsoft.VisualBasic.Interaction.InputBox("Please enter case description:", "Input Case Description", "");
+            if (!string.IsNullOrEmpty(caseDescription))
+            {
+                reportContent.Add("Case Description", caseDescription);
+            }
+
+            reportContent.Add("Date", DateTime.Now.ToString());
+            //reportContent.Add("Image", imageData.ToString());
+
+
+            pdfReport = pdfReportGenerator.GenerateReport(reportContent);
+            File.WriteAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "Report.pdf"), pdfReport);
+            MessageBox.Show("PDF Report Has Been Generated.", "PDF Report Generation");
+        }
+
+        private void exportAsZIPFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            byte[] imageData = null;
+            try
+            {
+                imageData = File.ReadAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "output.png"));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Please save the image first.");
+                return;
+            }
+            var zipData = zipCompressor.CompressToZip(imageData, pdfReport, audioStream);
+
+            File.WriteAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "compressedData.zip"), zipData);
+            MessageBox.Show("Zip file generated and saved as 'compressedData.zip'.", "Compressed successfully");
+        }
+
+        private async void shareToTelegramBotToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // TODO
+            var botToken = "YOUR_TELEGRAM_BOT_API_TOKEN";
+            var chatId = "YOUR_CHAT_ID";
+
+            byte[] imageData = null;
+            try
+            {
+                imageData = File.ReadAllBytes(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Storage", "output.png"));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Please save the image first.");
+                return;
+            }
+
+            await telegramHelper.ShareVoiceOnTelegram(botToken, chatId, audioData);
+            await telegramHelper.ShareImageOnTelegram(botToken, chatId, imageData);
+            await telegramHelper.ShareReportOnTelegram(botToken, chatId, pdfReport);
+
+            MessageBox.Show("Files sent to Telegram.", "Share on Telegram");
+        }
+
+        private void btnPlayVoiceNote_Click(object sender, EventArgs e)
+        {
+            if (waveOutEvent == null)
+            {
+                if (audioStream != null)
+                {
+                    InitAudio();
+                }
+            }
+            else
+            {
+                if (waveOutEvent.PlaybackState == PlaybackState.Playing)
+                {
+                    waveOutEvent?.Pause();
+                }
+                else if (waveOutEvent.PlaybackState == PlaybackState.Paused)
+                {
+                    waveOutEvent.Play();
+                }
+                else if (waveOutEvent.PlaybackState == PlaybackState.Stopped)
+                {
+                    InitAudio();
+                }
+            }
+        }
+
+        private void InitAudio()
+        {
+            audioStream.Position = 0; // Reset stream position to the beginning
+            var waveReader = new WaveFileReader(audioStream);
+            waveOutEvent = new WaveOutEvent();
+            waveOutEvent.Init(waveReader);
+            waveOutEvent.Play();
+        }
     }
 }
+

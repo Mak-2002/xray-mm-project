@@ -32,6 +32,8 @@ namespace XRayImageProcessor
                     pictureBox.Image.Save(sfd.FileName);
                 }
             }
+
+            pictureBox.Image.Save(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", "output.png"));
         }
 
         public Bitmap CropImage(Bitmap source, Rectangle cropRegion)

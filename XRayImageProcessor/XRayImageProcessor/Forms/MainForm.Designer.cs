@@ -56,11 +56,16 @@
             lowPassToolStripMenuItem = new ToolStripMenuItem();
             highPassToolStripMenuItem = new ToolStripMenuItem();
             compare2ImagesForDiseaseProgressionToolStripMenuItem = new ToolStripMenuItem();
+            generatePDFReportToolStripMenuItem = new ToolStripMenuItem();
+            exportAsZIPFileToolStripMenuItem = new ToolStripMenuItem();
+            shareToTelegramBotToolStripMenuItem = new ToolStripMenuItem();
             btnCropImage = new Button();
             gbDrawing = new GroupBox();
             cbShape = new ComboBox();
             lbShape = new Label();
             btnAddTextNote = new Button();
+            btnAddVoiceNote = new Button();
+            btnPlayVoiceNote = new Button();
             ((System.ComponentModel.ISupportInitialize)pbXrayImage).BeginInit();
             gbFilters.SuspendLayout();
             gbConditionClassification.SuspendLayout();
@@ -203,7 +208,7 @@
             // 
             // featuresToolStripMenuItem
             // 
-            featuresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { searchImagesToolStripMenuItem, fourierTransformationToolStripMenuItem, compare2ImagesForDiseaseProgressionToolStripMenuItem });
+            featuresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { searchImagesToolStripMenuItem, fourierTransformationToolStripMenuItem, compare2ImagesForDiseaseProgressionToolStripMenuItem, generatePDFReportToolStripMenuItem, exportAsZIPFileToolStripMenuItem, shareToTelegramBotToolStripMenuItem });
             featuresToolStripMenuItem.Name = "featuresToolStripMenuItem";
             featuresToolStripMenuItem.Size = new Size(83, 25);
             featuresToolStripMenuItem.Text = "Features";
@@ -242,6 +247,27 @@
             compare2ImagesForDiseaseProgressionToolStripMenuItem.Size = new Size(393, 26);
             compare2ImagesForDiseaseProgressionToolStripMenuItem.Text = "Compare 2 Images for Disease Progression";
             compare2ImagesForDiseaseProgressionToolStripMenuItem.Click += compare2ImagesForDiseaseProgressionToolStripMenuItem_Click;
+            // 
+            // generatePDFReportToolStripMenuItem
+            // 
+            generatePDFReportToolStripMenuItem.Name = "generatePDFReportToolStripMenuItem";
+            generatePDFReportToolStripMenuItem.Size = new Size(393, 26);
+            generatePDFReportToolStripMenuItem.Text = "Generate PDF Report";
+            generatePDFReportToolStripMenuItem.Click += generatePDFReportToolStripMenuItem_Click;
+            // 
+            // exportAsZIPFileToolStripMenuItem
+            // 
+            exportAsZIPFileToolStripMenuItem.Name = "exportAsZIPFileToolStripMenuItem";
+            exportAsZIPFileToolStripMenuItem.Size = new Size(393, 26);
+            exportAsZIPFileToolStripMenuItem.Text = "Export as ZIP File";
+            exportAsZIPFileToolStripMenuItem.Click += exportAsZIPFileToolStripMenuItem_Click;
+            // 
+            // shareToTelegramBotToolStripMenuItem
+            // 
+            shareToTelegramBotToolStripMenuItem.Name = "shareToTelegramBotToolStripMenuItem";
+            shareToTelegramBotToolStripMenuItem.Size = new Size(393, 26);
+            shareToTelegramBotToolStripMenuItem.Text = "Share to Telegram Bot";
+            shareToTelegramBotToolStripMenuItem.Click += shareToTelegramBotToolStripMenuItem_Click;
             // 
             // btnCropImage
             // 
@@ -295,11 +321,33 @@
             btnAddTextNote.UseVisualStyleBackColor = true;
             btnAddTextNote.Click += BtnAddTextNote_Click;
             // 
+            // btnAddVoiceNote
+            // 
+            btnAddVoiceNote.Location = new Point(218, 866);
+            btnAddVoiceNote.Name = "btnAddVoiceNote";
+            btnAddVoiceNote.Size = new Size(150, 40);
+            btnAddVoiceNote.TabIndex = 16;
+            btnAddVoiceNote.Text = "Add Voice Note";
+            btnAddVoiceNote.UseVisualStyleBackColor = true;
+            btnAddVoiceNote.Click += btnAddVoiceNote_Click;
+            // 
+            // btnPlayVoiceNote
+            // 
+            btnPlayVoiceNote.Location = new Point(374, 865);
+            btnPlayVoiceNote.Name = "btnPlayVoiceNote";
+            btnPlayVoiceNote.Size = new Size(150, 40);
+            btnPlayVoiceNote.TabIndex = 17;
+            btnPlayVoiceNote.Text = "Play Voice Note";
+            btnPlayVoiceNote.UseVisualStyleBackColor = true;
+            btnPlayVoiceNote.Click += btnPlayVoiceNote_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(678, 918);
+            Controls.Add(btnPlayVoiceNote);
+            Controls.Add(btnAddVoiceNote);
             Controls.Add(gbDrawing);
             Controls.Add(gbConditionClassification);
             Controls.Add(btnAddTextNote);
@@ -344,5 +392,11 @@
         private Label lbShape;
 
         #endregion
+
+        private Button btnAddVoiceNote;
+        private ToolStripMenuItem generatePDFReportToolStripMenuItem;
+        private ToolStripMenuItem exportAsZIPFileToolStripMenuItem;
+        private ToolStripMenuItem shareToTelegramBotToolStripMenuItem;
+        private Button btnPlayVoiceNote;
     }
 }

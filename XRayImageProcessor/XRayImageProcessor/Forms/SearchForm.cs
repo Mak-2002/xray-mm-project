@@ -8,7 +8,7 @@ namespace XRayImageProcessor.Forms
     public partial class SearchForm : Form
     {
         private List<ImageMetadata> imageMetadataList = new List<ImageMetadata>();
-        private string defaultStorageLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Storage");
+        public string defaultStorageLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Storage");
 
         public SearchForm()
         {

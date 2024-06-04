@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\helpers\\pdfreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\helpers\\pdfreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\shapes\\shapesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\shapes\\shapesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\logic\\imagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\logic\\imagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\logic\\imagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|c:\\users\\kossa\\documents\\github\\mak-2002\\xray-mm-project\\xrayimageprocessor\\xrayimageprocessor\\logic\\imagehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\logic\\imagehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\helpers\\audiorecorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\helpers\\audiorecorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\logic\\fouriertransformationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\logic\\fouriertransformationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\searchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\searchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\searchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\searchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\logic\\imagehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\logic\\imagehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\helpers\\telegramhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\helpers\\telegramhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\shapes\\shapesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\shapes\\shapesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\xrayimageprocessor\\logic\\fouriertransformationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DB5FF28-37B4-4E3E-ABF3-5EE732C78886}|XRayImageProcessor\\XRayImageProcessor.csproj|solutionrelative:xrayimageprocessor\\logic\\fouriertransformationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,21 +66,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShapesManager.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Shapes\\ShapesManager.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Shapes\\ShapesManager.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Shapes\\ShapesManager.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Shapes\\ShapesManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:18:27.424Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -77,22 +76,35 @@
               "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\MainForm.cs",
               "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\MainForm.cs",
               "RelativeToolTip": "XRayImageProcessor\\Forms\\MainForm.cs",
-              "ViewState": "AQIAABMBAAAAAAAAAAAowC4BAAAuAAAA",
+              "ViewState": "AQIAAIoBAAAAAAAAAAAcwHsBAABzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T23:14:30.227Z",
+              "WhenOpened": "2024-06-04T04:40:23.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SearchForm.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "SearchForm.cs",
               "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs",
               "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\SearchForm.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs [Design]",
-              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.cs [Design]",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:18:55.157Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-03T20:15:03.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AudioRecorder.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\AudioRecorder.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Helpers\\AudioRecorder.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\AudioRecorder.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Helpers\\AudioRecorder.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowB0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T02:52:29.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -109,6 +121,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ImageHandler.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHandler.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Logic\\ImageHandler.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHandler.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Logic\\ImageHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwCMAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T00:15:06.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageHistory.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHistory.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Logic\\ImageHistory.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHistory.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Logic\\ImageHistory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T00:22:47.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PdfReportGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\PdfReportGenerator.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Helpers\\PdfReportGenerator.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\PdfReportGenerator.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Helpers\\PdfReportGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T02:53:01.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAJIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:12:15.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TelegramHelper.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\TelegramHelper.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Helpers\\TelegramHelper.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Helpers\\TelegramHelper.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Helpers\\TelegramHelper.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAASwBsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T02:54:12.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Program.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Program.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Program.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T22:07:47.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SearchForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\SearchForm.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs [Design]",
+              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:18:55.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShapesManager.cs",
+              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Shapes\\ShapesManager.cs",
+              "RelativeDocumentMoniker": "XRayImageProcessor\\Shapes\\ShapesManager.cs",
+              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Shapes\\ShapesManager.cs",
+              "RelativeToolTip": "XRayImageProcessor\\Shapes\\ShapesManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T01:18:27.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\MainForm.Designer.cs",
@@ -121,33 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImageHistory.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHistory.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Logic\\ImageHistory.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHistory.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Logic\\ImageHistory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:22:47.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ImageHandler.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHandler.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Logic\\ImageHandler.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\ImageHandler.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Logic\\ImageHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T00:15:06.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "FourierTransformationManager.cs",
               "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Logic\\FourierTransformationManager.cs",
               "RelativeDocumentMoniker": "XRayImageProcessor\\Logic\\FourierTransformationManager.cs",
@@ -155,47 +238,7 @@
               "RelativeToolTip": "XRayImageProcessor\\Logic\\FourierTransformationManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T22:54:20.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Program.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Program.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Program.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T22:07:47.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SearchForm.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\SearchForm.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAjwGMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:15:03.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SearchForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
-              "RelativeDocumentMoniker": "XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
-              "ToolTip": "C:\\Users\\kossa\\Documents\\GitHub\\mak-2002\\xray-mm-project\\XRayImageProcessor\\XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
-              "RelativeToolTip": "XRayImageProcessor\\Forms\\SearchForm.Designer.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAgwJIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T20:12:15.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T22:54:20.901Z"
             }
           ]
         }
